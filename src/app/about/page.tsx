@@ -1,7 +1,7 @@
-import ContactMe from '@/components/ContactMe';
-import ImagePage from '@/components/ImagePage';
-import TextPage from '@/components/TextPage';
-import TitlePage from '@/components/TitlePage';
+import ContactMe from '../../components/ContactMe';
+import ImagePage from '../../components/ImagePage';
+import TextPage from '../../components/TextPage';
+import TitlePage from '../../components/TitlePage';
 import Image from 'next/image';
 import React from 'react';
 

@@ -1,16 +1,14 @@
 "use client"
 
-import Button from '@/components/Button'
-import ContactForm from '@/components/ContactForm'
-import ContactMe from '@/components/ContactMe'
-import ImagePage from '@/components/ImagePage'
-import Skills from '@/components/Skills'
-import TextPage from '@/components/TextPage'
-import TitlePage from '@/components/TitlePage'
-import Works from '@/components/Works'
-import Image from 'next/image'
+import Button from '../components/Button'
+import ContactForm from '../components/ContactForm'
+import ContactMe from '../components/ContactMe'
+import ImagePage from '../components/ImagePage'
+import Skills from '../components/Skills'
+import TextPage from '../components/TextPage'
+import TitlePage from '../components/TitlePage'
+import Works from '../components/Works'
 import Link from 'next/link'
-import { useRef } from 'react'
 
 export default function Home() {
 

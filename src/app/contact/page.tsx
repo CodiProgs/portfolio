@@ -1,5 +1,5 @@
-import ContactForm from '@/components/ContactForm';
-import ContactMe from '@/components/ContactMe';
+import ContactForm from '../../components/ContactForm';
+import ContactMe from '../../components/ContactMe';
 import React from 'react';
 
 function page () {

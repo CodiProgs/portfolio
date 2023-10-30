@@ -1,6 +1,6 @@
 "use client"
 
-import { useGeneralStore } from '@/stores/generalStore';
+import { useGeneralStore } from '../stores/generalStore';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { HiMoon } from "react-icons/hi2";

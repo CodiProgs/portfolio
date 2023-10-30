@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect } from 'react';
-import { useGeneralStore } from '@/stores/generalStore'
+import { useGeneralStore } from '../stores/generalStore'
 
 function ThemeLayout ({children}: {children: React.ReactNode}) {
     const isDarkMode = useGeneralStore((state) => state.isDarkMode)

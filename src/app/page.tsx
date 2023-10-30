@@ -1,113 +1,74 @@
+"use client"
+
+import Button from '@/components/Button'
+import ContactForm from '@/components/ContactForm'
+import ContactMe from '@/components/ContactMe'
+import ImagePage from '@/components/ImagePage'
+import Skills from '@/components/Skills'
+import TextPage from '@/components/TextPage'
+import TitlePage from '@/components/TitlePage'
+import Works from '@/components/Works'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRef } from 'react'
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="grid grid-cols-10 py-10 max-lg:grid-cols-3 max-lg:gap-12 max-md:grid-cols-1">
+        <div className="col-span-5 max-lg:col-span-2 max-md:col-span-1">
+          <h1 className='text-6xl font-podkova mb-5 max-xl:text-5xl max-md:text-3xl'>Hello, <br />my name is Samuil <br /> <span className='font-bold'>Fullstack Developer</span></h1>
+          <p className='text-lg text-secondary mb-8 max-md:text-sm'>I'm an enthusiastic full-stack developer just starting my journey in the world of web development. I've been having my skills in HTML, CSS, JavaScript, and popular framework like React, Next.js, Nest.js. I'm passionate about creating visually appealing, highly functional web applications and I'm eager to collaborate, learn and grow alongside a team.</p>
+
+        </div>
+        <div className="col-span-4 col-start-7 max-lg:col-span-1">
+          <ImagePage image='/welcome.jpg' />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="grid grid-cols-10 py-10 max-lg:grid-cols-3 max-lg:gap-12 max-md:grid-cols-1">
+        <div className="col-span-4 max-lg:col-span-1 max-md:order-2 max-sm:hidden">
+          <ImagePage image='/about.jpg'/>
+        </div>
+        <div className="col-span-5 col-start-6 max-lg:col-span-2 max-md:col-span-1">
+          <div className="mb-16">
+          <TitlePage text='About Me'/>
+          <TextPage>
+          I am a passionate and dedicated full-stack developer with expertise in both backend and frontend technologies. My backend development skills are centered around Nest.js, while my frontend development proficiency lies in Next.js. With a keen eye for detail and a thirst for knowledge, I am constantly striving to improve and expand my skill set.
+          <br /><br />
+          I am on a journey to accumulate valuable experiences in the world of web development.  I am open to diverse opportunities that will help me grow as a developer and make a meaningful impact.
+          </TextPage>
+          </div>
+          <div className='mb-10'>
+          <h2 className='text-2xl font-medium mb-8'>Why should you choose me?</h2>
+          <TextPage>
+          As a passionate and ambitious beginner in web development, I've dedicated myself to learning current technologies, such as Js, Node, Nest . By choosing me, you not only support my growth in the industry, but also benefit from my eagerness to stay informed and adapt. My persistence, problem-solving mindset, and eagerness to collaborate make me an ideal candidate for projects looking for enthusiasm.
+          </TextPage>
+          </div>
+          <Link href='/about' className='w-max block'><Button>More Info</Button></Link>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="py-10 text-center">
+        <TitlePage text='Skills'/>
+        <p className='text-secondary mb-10'>As a beginner web developer, my skills are still in the early stages of development, but I have a firm grasp of the essential tools and languages necessary for creating basic web applications. My current skills include:</p>
+        <Skills/>
+        <p className='text-secondary mt-8 text-sm'>I am highly motivated to learn and ready to invest time and effort into evolving as a web developer.</p>
       </div>
-    </main>
+      <div className="py-10 flex flex-col items-center">
+        <TitlePage text='Work'/>
+        <div className="mb-8">
+          <Works/>
+        </div>
+        <Link href='/work' className='w-max block'><Button>More</Button></Link>
+      </div>
+      <div className="grid grid-cols-10 py-10 max-lg:grid-cols-1 max-lg:gap-12 ">
+        <div className="col-span-5 max-lg:col-span-1 max-md:col-span-1">
+          <ContactForm/>
+        </div>
+        <div className="col-span-4 col-start-7 max-lg:col-span-1">
+          <ContactMe/>
+        </div>
+      </div>
+    </>
   )
 }

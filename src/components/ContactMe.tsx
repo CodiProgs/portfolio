@@ -22,7 +22,7 @@ function ContactMe () {
                 <Link href='https://github.com/CodiProgs' className='underline'>CodiProgs</Link>
             </div>
             </div>
-            <div className="text-sm">Thanks for stopping by! I'm looking forward to our conversation.</div>
+            <div className="text-sm">Thanks for stopping by! I&apos;m looking forward to our conversation.</div>
         </>
     );
 }

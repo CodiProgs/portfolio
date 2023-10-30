@@ -8,7 +8,7 @@ function ThemeLayout ({children}: {children: React.ReactNode}) {
     const [mounted, setMounted] = React.useState(false)
     useEffect(() => {
         setMounted(true)
-    })
+    }, [])
     
     if(mounted){
         return (

@@ -5,7 +5,7 @@ function ContactForm () {
     return (
         <>
             <TitlePage text='Get in Touch'/>
-          <p className='text-secondary text-sm mb-10'>If you'd like to connect, discuss a project, or what about opportunities, I'd be more than excited to hear from you! Please use the feedback form below or contact me using any of the alternative communication methods.</p>
+          <p className='text-secondary text-sm mb-10'>If you&apos;d like to connect, discuss a project, or what about opportunities, I&apos;d be more than excited to hear from you! Please use the feedback form below or contact me using any of the alternative communication methods.</p>
           <div className='grid gap-8'>
             <div className="grid grid-cols-2 gap-8">
               <input type="text" placeholder='Who are you?' className='border px-6 py-4'/>

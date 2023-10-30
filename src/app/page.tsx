@@ -17,7 +17,7 @@ export default function Home() {
       <div className="grid grid-cols-10 py-10 max-lg:grid-cols-3 max-lg:gap-12 max-md:grid-cols-1">
         <div className="col-span-5 max-lg:col-span-2 max-md:col-span-1">
           <h1 className='text-6xl font-podkova mb-5 max-xl:text-5xl max-md:text-3xl'>Hello, <br />my name is Samuil <br /> <span className='font-bold'>Fullstack Developer</span></h1>
-          <p className='text-lg text-secondary mb-8 max-md:text-sm'>I'm an enthusiastic full-stack developer just starting my journey in the world of web development. I've been having my skills in HTML, CSS, JavaScript, and popular framework like React, Next.js, Nest.js. I'm passionate about creating visually appealing, highly functional web applications and I'm eager to collaborate, learn and grow alongside a team.</p>
+          <p className='text-lg text-secondary mb-8 max-md:text-sm'>I&apos;m an enthusiastic full-stack developer just starting my journey in the world of web development. I&apos;ve been having my skills in HTML, CSS, JavaScript, and popular framework like React, Next.js, Nest.js. I&apos;m passionate about creating visually appealing, highly functional web applications and I&apos;m eager to collaborate, learn and grow alongside a team.</p>
 
         </div>
         <div className="col-span-4 col-start-7 max-lg:col-span-1">
@@ -40,7 +40,7 @@ export default function Home() {
           <div className='mb-10'>
           <h2 className='text-2xl font-medium mb-8'>Why should you choose me?</h2>
           <TextPage>
-          As a passionate and ambitious beginner in web development, I've dedicated myself to learning current technologies, such as Js, Node, Nest . By choosing me, you not only support my growth in the industry, but also benefit from my eagerness to stay informed and adapt. My persistence, problem-solving mindset, and eagerness to collaborate make me an ideal candidate for projects looking for enthusiasm.
+          As a passionate and ambitious beginner in web development, I&apos;ve dedicated myself to learning current technologies, such as Js, Node, Nest . By choosing me, you not only support my growth in the industry, but also benefit from my eagerness to stay informed and adapt. My persistence, problem-solving mindset, and eagerness to collaborate make me an ideal candidate for projects looking for enthusiasm.
           </TextPage>
           </div>
           <Link href='/about' className='w-max block'><Button>More Info</Button></Link>

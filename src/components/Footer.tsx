@@ -7,7 +7,7 @@ function Footer () {
         <div className='flex gap-16 py-10 flex-wrap justify-between mt-auto'>
             <div className='max-w-[30%]'>
                 <h4 className='text-4xl font-bold mb-5 max-md:text-2xl'>CodiWork</h4>
-                <p className='text-secondary text-sm'>“Aspiring full-stack developer with a strong foundation in front-end and back-end technologies. Eager to learn and apply cutting-edge skills to create dynamic web solutions."</p>
+                <p className='text-secondary text-sm'>“Aspiring full-stack developer with a strong foundation in front-end and back-end technologies. Eager to learn and apply cutting-edge skills to create dynamic web solutions&quot;“</p>
             </div>
             <div>
                 <h4 className='text-2xl font-semibold mb-8 max-md:text-xl'>My contacts</h4>
